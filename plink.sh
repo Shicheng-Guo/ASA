@@ -1,0 +1,1 @@
+  plink --bfile /home/jack/Mohammed_files/JA/POP_filtered_chr21 --covar /home/jack/Mohammed_files/JA/Post-PCA/PCA.eigenvec --logistic --adjust --pheno /home/jack/Mohammed_files/JA/JA_PhenTemp.header --allow-no-sex --pheno-name ProCan --out /home/jack/Mohammed_files/JA/Post-GWAS-files/GWAS
