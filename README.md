@@ -63,6 +63,12 @@ for i in {1..22}
 do
 unzip -P gK?9sQr5bTtJZR chr_$i.zip 
 done
+
+
+for i in {1..22}
+do
+unzip -P ci7PvDMsT8zqsA chr_$i.zip 
+done
 ```
 * Step 5. 
 
