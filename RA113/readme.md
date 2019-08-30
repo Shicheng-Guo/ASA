@@ -19,7 +19,7 @@ done
 ```
 
 
-``
+```
  wget https://imputationserver.sph.umich.edu/share/results/bef4440e3b1075b1e36132516faa3ef3/chr_1.zip
  wget https://imputationserver.sph.umich.edu/share/results/1336b8967d31c223a569adf29412caa4/chr_10.zip
  wget https://imputationserver.sph.umich.edu/share/results/91c6e45418f942d69073e281cf3c5904/chr_11.zip
