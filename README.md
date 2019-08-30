@@ -12,6 +12,14 @@ for i in {1..26}
 do
 plink --bfile he2019 --chr $i --recode vcf --out ./vcf/he2009.chr$i
 done
+
+# merge 2nd and 3rd batch
+plink --file RA56 --merge RA57.ped RA57.map --recode --make-bed --out RA113
+
+for i in {1..22}
+do
+plink --bfile RA113 --chr $i --recode vcf --out ./vcf/RA113.chr$i
+done
 ```
 * Step 2. Using bcftools to depress vcf and tabix index
 
