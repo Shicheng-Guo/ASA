@@ -1,5 +1,4 @@
-
-
+merge RA56 and RA57
 ```
 cd ~/hpc/rheumatology/RA/he2019/plink/vcf
 mkdir temp
@@ -18,7 +17,7 @@ qsub $i.job
 done
 ```
 
-
+wget imputation result
 ```
  wget https://imputationserver.sph.umich.edu/share/results/bef4440e3b1075b1e36132516faa3ef3/chr_1.zip
  wget https://imputationserver.sph.umich.edu/share/results/1336b8967d31c223a569adf29412caa4/chr_10.zip
@@ -42,4 +41,11 @@ done
  wget https://imputationserver.sph.umich.edu/share/results/468e27dea2d50fec15d06440a6ade64d/chr_7.zip
  wget https://imputationserver.sph.umich.edu/share/results/f6b602737cd162c836b94bc52f51503e/chr_8.zip
  wget https://imputationserver.sph.umich.edu/share/results/d6231c89c5a760226aab316cc3b14ddd/chr_9.zip
+```
+unzip with passwd
+```
+for i in {1..22}
+do
+unzip -P 0S8RedytR%:iDH chr_$i.zip 
+done
 ```
