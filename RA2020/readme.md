@@ -20,7 +20,7 @@ echo bcftools view he2020.chr$i.vcf -Oz -o ./vcfupload/he2020.chr$i.vcf.gz >>$i.
 qsub $i.job
 done
 ```
-3. add contig length to michigen imputation server output vcf.gz files since contig length information was lost. 
+3. add contig length to michigen imputation server output vcf.gz files since contig length information was lost (rsq>0.3) 
 ```
 cd /gpfs/home/guosa/hpc/rheumatology/RA/he2020/impute/R3
 mkdir temp
