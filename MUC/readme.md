@@ -1,4 +1,4 @@
-extract genotypes for MUC genes
+1. extract genotypes for MUC genes
 ```
 cd /gpfs/home/guosa/hpc/rheumatology/RA/he2020/impute/R3
 mkdir temp
