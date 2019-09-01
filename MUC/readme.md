@@ -31,6 +31,11 @@ https://github.com/Shicheng-Guo/AnnotationDatabase/blob/master/hg19/refGene.hg19
 
 https://github.com/Shicheng-Guo/AnnotationDatabase/blob/master/hg19/refGene.hg19.VCF.sort.bed.gz.tbi
 ```
-bcftools annotate -a ~/hpc/db/hg19/dbSNP152/dbSNP152.chr$i.hg19.vcf.gz -c ID  chr$i.dose.contig.vcf.gz -Oz -o MUC.hg19.vcf.gz
 bcftools annotate -a ~/hpc/db/hg19/refGene.hg19.VCF.sort.bed.gz -c CHROM,FROM,TO,GENE -h <(echo '##INFO=<ID=GENE,Number=1,Type=String,Description="Gene name">') MUC.hg19.vcf.gz -Oz -o MUC.anno.hg19.vcf.gz
 ```
+5. check several positive SNPs
+```
+bcftools view -i '%iD=="rs35705950"' MUC.anno.hg19.vcf.gz | less -S 
+bcftools view -i '%iD=="rs79920422"' MUC.anno.hg19.vcf.gz | less -S 
+```
+ 
