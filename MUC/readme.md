@@ -20,3 +20,17 @@ echo bcftools view -i \'R2\>0.6\|TYPED=1\|TYPED_ONLY=1\' -R MUC.hg19.sort.bed ch
 qsub $i.job
 done
 ```
+3. concat all the MUC genotypes from chr1 to chr22
+```
+ls chr*.dose.MUC.clean.hg19.vcf.gz > MUC.vcf.txt
+bcftools concat -f MUC.vcf.txt -Oz -o MUC.hg19.vcf.gz
+```
+4. annotate gene symbol to vcf files. In order to add gene symbol to vcf file, we need a bed.gz file includes chr,start,end,symbol. bed.gz should be index with tabix. You can download these two file from the following sites: 
+
+https://github.com/Shicheng-Guo/AnnotationDatabase/blob/master/hg19/refGene.hg19.VCF.sort.bed.gz
+
+https://github.com/Shicheng-Guo/AnnotationDatabase/blob/master/hg19/refGene.hg19.VCF.sort.bed.gz.tbi
+```
+bcftools annotate -a ~/hpc/db/hg19/dbSNP152/dbSNP152.chr$i.hg19.vcf.gz -c ID  chr$i.dose.contig.vcf.gz -Oz -o MUC.hg19.vcf.gz
+bcftools annotate -a ~/hpc/db/hg19/refGene.hg19.VCF.sort.bed.gz -c CHROM,FROM,TO,GENE -h <(echo '##INFO=<ID=GENE,Number=1,Type=String,Description="Gene name">') MUC.hg19.vcf.gz -Oz -o MUC.anno.hg19.vcf.gz
+```
