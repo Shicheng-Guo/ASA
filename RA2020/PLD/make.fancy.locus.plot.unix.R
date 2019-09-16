@@ -1,4 +1,23 @@
-make.fancy.locus.plot.unix <- function(snp, locusname, chr, locus, range, best.pval) {
+args = commandArgs(trailingOnly=TRUE)
+
+snp=as.character(args[1])
+locusname=args[2]
+chr=args[3]
+localhitfile=args[4]
+range=as.numeric(args[5])
+best.pval=as.numeric(args[6])
+
+print(snp)
+print(locusname)
+print(chr)
+print(localhitfile)
+print(range)
+print(best.pval)
+
+# Usage: make.fancy.locus.plot.unix("rs35469986", "TAB1", "22", locus, 10, 0.00005)
+
+make.fancy.locus.plot.unix <- function(snp, locusname, chr, localhitfile, range, best.pval){
+  locus <- read.table(localhitfile, header=T, row.names=1)
   hit <- locus[snp,]
   min.pos <- min(locus$POS) - 10000
   max.pos <- max(locus$POS) + 10000
@@ -17,7 +36,6 @@ make.fancy.locus.plot.unix <- function(snp, locusname, chr, locus, range, best.p
   genelist$SIZE=genelist$STOP-genelist$START
   genes.in.locus <- subset(genelist, (CHR==paste("chr",chr,sep="") & genelist$START > min.pos & genelist$START < max.pos ) | ( CHR==paste("chr",chr,sep="") & genelist$STOP > min.pos & genelist$STOP < max.pos) )
   print(genes.in.locus)
-  
   markers.in.strong.ld <- subset(locus, (row.names(locus) != snp & locus$RSQR >= 0.8 & locus$TYPE == "typed"))
   markers.in.moderate.ld <- subset(locus, (row.names(locus) != snp & locus$RSQR >= 0.5 & locus$RSQR < 0.8 & locus$TYPE == "typed"))
   markers.in.weak.ld <- subset(locus, (row.names(locus) != snp & locus$RSQR >= 0.2 & locus$RSQR < 0.5 & locus$TYPE == "typed"))
@@ -56,14 +74,15 @@ make.fancy.locus.plot.unix <- function(snp, locusname, chr, locus, range, best.p
   for ( i in 1:nrow(genes.in.locus)){ 
     if ( genes.in.locus[i,]$STRAND == "+" ) {
       arrows(max(genes.in.locus[i,]$START, min.pos), -offset+i, min(genes.in.locus[i,]$STOP, max.pos), -offset+i, length=0.05, lwd=2, code=2, lty="solid", col="darkgreen")
-      text(genes.in.locus[i,]$START + (genes.in.locus[i,]$SIZE/2), -offset+i, labels=genes.in.locus[i,]$GENE, cex=0.8)
+      text(genes.in.locus[i,]$START + (genes.in.locus[i,]$SIZE/2), -offset+1, labels=genes.in.locus[i,]$GENE, cex=0.8)
       }else{		
       arrows(max(genes.in.locus[i,]$START, min.pos), -offset+i, min(genes.in.locus[i,]$STOP, max.pos), -offset+i, length=0.05, lwd=2, code=1, lty="solid", col="darkgreen")
-      text(genes.in.locus[i,]$START + (genes.in.locus[i,]$SIZE/2), -offset+i, labels=genes.in.locus[i,]$GENE, cex=0.8)
+      text(genes.in.locus[i,]$START + (genes.in.locus[i,]$SIZE/2), -offse+1t, labels=genes.in.locus[i,]$GENE, cex=0.8)
     }
   }
 }
 
-setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/TAB1")
-locus <- read.table("local.new", header=T, row.names=1,as.is=T)
-make.fancy.locus.plot.unix("rs35469986", "TAB1", "22", locus, 10, 0.00005)
+seed=sample(seq(1,100000,by=1),1)
+pdf(paste(snp,"localhit",seed,".pdf",sep="."))
+make.fancy.locus.plot.unix(snp, locusname, chr, localhitfile, range, best.pval)
+dev.off()
