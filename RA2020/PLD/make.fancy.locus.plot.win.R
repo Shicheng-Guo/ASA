@@ -56,10 +56,10 @@ make.fancy.locus.plot <- function(snp, locusname, chr, locus, range, best.pval) 
   for ( i in 1:nrow(genes.in.locus)){ 
     if ( genes.in.locus[i,]$STRAND == "+" ) {
       arrows(max(genes.in.locus[i,]$START, min.pos), -offset+i, min(genes.in.locus[i,]$STOP, max.pos), -offset+i, length=0.05, lwd=2, code=2, lty="solid", col="darkgreen")
-      text(genes.in.locus[i,]$START + (genes.in.locus[i,]$SIZE / 2), -offset+i, labels=genes.in.locus[i,]$GENE, cex=0.8)
+      text(genes.in.locus[i,]$START + (genes.in.locus[i,]$SIZE/2), -offset+i, labels=genes.in.locus[i,]$GENE, cex=0.8)
       }else{		
       arrows(max(genes.in.locus[i,]$START, min.pos), -offset+i, min(genes.in.locus[i,]$STOP, max.pos), -offset+i, length=0.05, lwd=2, code=1, lty="solid", col="darkgreen")
-      text(genes.in.locus[i,]$START + (genes.in.locus[i,]$SIZE / 2), -offset+i, labels=genes.in.locus[i,]$GENE, cex=0.8)
+      text(genes.in.locus[i,]$START + (genes.in.locus[i,]$SIZE/2), -offset+i, labels=genes.in.locus[i,]$GENE, cex=0.8)
     }
   }
 }
@@ -67,3 +67,5 @@ make.fancy.locus.plot <- function(snp, locusname, chr, locus, range, best.pval) 
 setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/TAB1")
 locus <- read.table("local.new", header=T, row.names=1,as.is=T)
 make.fancy.locus.plot("rs35469986", "TAB1", "22", locus, 10, 0.00005)
+
+
