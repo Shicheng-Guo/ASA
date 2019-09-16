@@ -63,7 +63,6 @@ make.fancy.locus.plot <- function(snp, locusname, chr, locus, range, best.pval) 
     }
   }
 }
-
 setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/TAB1")
 locus <- read.table("local.new", header=T, row.names=1,as.is=T)
 make.fancy.locus.plot("rs35469986", "TAB1", "22", locus, 10, 0.00005)
