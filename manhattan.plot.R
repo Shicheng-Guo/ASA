@@ -1,3 +1,4 @@
+
 args = commandArgs(trailingOnly=TRUE)
 mylimma<-read.table(args,head=T,sep="",check.names=F)
 colnames(mylimma)=c("CHR","SNP","BP","A1","TEST","NMISS","OR","STAT","P")
@@ -22,7 +23,7 @@ manhattan.plot(mylimma)
 qqplot<-function(pvalues,output="qqplot.pdf"){
 library("Haplin")
 pdf(paste("qqplot.",seed,".pdf",sep=""))
-  pQQ(pvalues, nlabs =length(pvalues), conf = 0.95) 
+  pQQ(na.omit(pvalues), nlabs =length(pvalues), conf = 0.95)
 dev.off()
 }
 qqplot(mylimma$P)
