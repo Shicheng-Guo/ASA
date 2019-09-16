@@ -1,4 +1,4 @@
-make.fancy.locus.plot.win <- function(snp, locusname, chr, locus, range, best.pval) {
+make.fancy.locus.plot <- function(snp, locusname, chr, locus, range, best.pval) {
   hit <- locus[snp,]
   min.pos <- min(locus$POS) - 10000
   max.pos <- max(locus$POS) + 10000
@@ -27,7 +27,7 @@ make.fancy.locus.plot.win <- function(snp, locusname, chr, locus, range, best.pv
   imputed.in.weak.ld <- subset(locus, (row.names(locus) != snp & locus$RSQR >= 0.2 & locus$RSQR < 0.5 & locus$TYPE == "imputed"))
   imputed.not.in.ld <- subset(locus, (row.names(locus) != snp & locus$RSQR<0.2 & locus$TYPE == "imputed"))
   par(mar=c(4,4,3,4))
-  plot(keep.recomb[,1], ystart.recomb + ( ( keep.recomb[,2] / 60 ) * ( 6 * big.range / 8 )), type="l", col="lightblue", lwd=1, xlim=c(min.pos, max.pos), ylim=c(-offset,range), xlab="", ylab="", main=locusname, axes=F)
+  plot(keep.recomb[,2], ystart.recomb + ( ( keep.recomb[,3] / 60 ) * ( 6 * big.range / 8 )), type="l", col="lightblue", lwd=1, xlim=c(min.pos, max.pos), ylim=c(-offset,range), xlab="", ylab="", main=locusname, axes=F)
   mtext(paste("Chromosome", chr, "position (kb)", sep=" "), side=1, line=2.5)
   axis(1, at=c(center.100kb.pos - offset.100kb.pos, center.100kb.pos, center.100kb.pos + offset.100kb.pos), labels=c((center.100kb.pos - offset.100kb.pos) / 1000, center.100kb.pos / 1000, (center.100kb.pos + offset.100kb.pos) / 1000), las=1) 
   axis(2, at=seq(0,range,2), labels=seq(0,range,2), las=1) 
@@ -63,3 +63,9 @@ make.fancy.locus.plot.win <- function(snp, locusname, chr, locus, range, best.pv
     }
   }
 }
+
+setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/TAB1")
+locus <- read.table("local.new", header=T, row.names=1,as.is=T)
+make.fancy.locus.plot("rs35469986", "TAB1", "22", locus, 10, 0.00005)
+
+
