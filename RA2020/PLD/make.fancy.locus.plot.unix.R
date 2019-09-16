@@ -1,4 +1,4 @@
-make.fancy.locus.plot <- function(snp, locusname, chr, locus, range, best.pval) {
+make.fancy.locus.plot.unix <- function(snp, locusname, chr, locus, range, best.pval) {
   hit <- locus[snp,]
   min.pos <- min(locus$POS) - 10000
   max.pos <- max(locus$POS) + 10000
