@@ -1,6 +1,7 @@
 args = commandArgs(trailingOnly=TRUE)
 mylimma<-read.table(args,head=T,sep="",check.names=F)
 colnames(mylimma)=c("CHR","SNP","BP","A1","TEST","NMISS","OR","STAT","P")
+seed=sample(seq(1,100000,by=1),1)
 manhattan.plot<-function(mylimma){
 library(qqman)
 CHR=mylimma$CHR
@@ -12,9 +13,16 @@ CHR<-as.numeric(CHR)
 manhattaninput=data.frame(SNP=mylimma$SNP,CHR=CHR,BP=mylimma$BP,P=mylimma$P)
 max<-max(2-log(manhattaninput$P,10))
 genomewideline=0.05/nrow(manhattaninput)
-seed=sample(seq(1,100000,by=1),1)
 pdf(paste("manhattan.",seed,".pdf",sep=""))
 manhattan(manhattaninput,col = c("blue4", "orange3"),ylim = c(0,10),genomewideline=-log10(genomewideline),lwd=2, suggestiveline=F)
 dev.off()
 }
 manhattan.plot(mylimma)
+
+qqplot<-function(pvalues,output="qqplot.pdf"){
+library("Haplin")
+pdf(paste("qqplot.",seed,".pdf",sep=""))
+  pQQ(pvalues, nlabs =length(pvalues), conf = 0.95) 
+dev.off()
+}
+qqplot(mylimma$P)
