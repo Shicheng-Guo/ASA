@@ -1,4 +1,4 @@
-open F,"RA2020-B6.fam";
+open F,shift @ARGV;
 while(<F>){
 chomp;
 my @line=split /\s+/,$_;
