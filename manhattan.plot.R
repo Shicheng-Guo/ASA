@@ -17,3 +17,4 @@ pdf(paste("manhattan.",seed,".pdf",sep=""))
 manhattan(manhattaninput,col = c("blue4", "orange3"),ylim = c(0,10),genomewideline=-log10(genomewideline),lwd=2, suggestiveline=F)
 dev.off()
 }
+manhattan.plot(mylimma)
