@@ -1,4 +1,4 @@
-make.fancy.locus.plot <- function(snp, locusname, chr, locus, range, best.pval) {
+make.fancy.locus.plot.win <- function(snp, locusname, chr, locus, range, best.pval) {
   hit <- locus[snp,]
   min.pos <- min(locus$POS) - 10000
   max.pos <- max(locus$POS) + 10000
@@ -65,4 +65,4 @@ make.fancy.locus.plot <- function(snp, locusname, chr, locus, range, best.pval) 
 }
 setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/TAB1")
 locus <- read.table("local.new", header=T, row.names=1,as.is=T)
-make.fancy.locus.plot("rs35469986", "TAB1", "22", locus, 10, 0.00005)
+make.fancy.locus.plot.win("rs35469986", "TAB1", "22", locus, 10, 0.00005)
