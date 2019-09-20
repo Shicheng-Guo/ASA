@@ -18,14 +18,14 @@ echo  "Association of" $input "with rheumatoid arthritis" > readme.txt
 plink --bfile ROI.dbsnp --hardy --out ROI
 echo  "ROI.hwe: Hardy-Weinberg test statistics for each SNP for" $input. "SNPs in control group should not signficant which means P should higher than 0.05 or 0.01. this table will be put to supplementary table" > readme.txt
 plink --bfile ROI.dbsnp --logistic --hwe 0.01 --adjust --ci 0.95 --out ROI
-echo  "ROI.assoc.logistic: logistic based case-control test for" $input. "default style is to test additive model (ADD) in logistic regression. this file will be one of most important table in the manuscript" >> readme.txt
-echo  "ROI.assoc.logistic.adjusted: this file include all the multiple-test corrected P-value for each SNPs in" $input. " When you prepare the manuscript, this file should be integrate with above file (ROI.assoc.logistic)" >> readme.txt
+echo  "ROI.assoc.logistic: logistic based case-control test for" $input. "default style is to test additive model --ADD-- in logistic regression. this file will be one of most important table in the manuscript" >> readme.txt
+echo  "ROI.assoc.logistic.adjusted: this file include all the multiple-test corrected P-value for each SNPs in" $input. " When you prepare the manuscript, this file should be integrate with above file --ROI.assoc.logistic--" >> readme.txt
 plink --bfile ROI.dbsnp --assoc --counts --adjust --ci 0.95 --out ROI
 echo  "ROI.assoc: Chi-square based case-control test for" $input. "this file will be one of most important table in the manuscript since it showed the number of alleles in case and control" > readme.txt
-echo  "ROI.assoc.adjusted: this file include all the multiple-test corrected P-value (in the file: ROI.assoc) for each SNPs in" $input. " When you prepare the manuscript, this file should be integrate with above file (ROI.assoc)" >> readme.txt
+echo  "ROI.assoc.adjusted: this file include all the multiple-test corrected P-value --in the file: ROI.assoc-- for each SNPs in" $input. " When you prepare the manuscript, this file should be integrate with above file --ROI.assoc--" >> readme.txt
 plink --bfile ROI.dbsnp --fisher --counts --adjust --ci 0.95 --out ROI
-echo  "ROI.assoc.fisher: Fisher's exact test based case-control association between SNPs and RA in" $input. "this file will be useful when any cell < 5. Usually when certain cell have number <5, we report fisher's P-value not Chi-square P-value" >> readme.txt
-echo  "ROI.assoc.fisher.adjusted: this file include all the multiple-test corrected P-value (in the file: ROI.assoc) for each SNPs in" $input. " When you prepare the manuscript, this file should be integrate with above file (ROI.assoc)" >> readme.txt
+echo  'ROI.assoc.fisher: Fisher exact test based case-control association between SNPs and RA. This file will be useful when any cell lt 5. Usually when certain cell have number lt 5, we report fisher P-value not Chi-square P-value' >> readme.txt
+echo  "ROI.assoc.fisher.adjusted: this file include all the multiple-test corrected P-value --in the file: ROI.assoc-- for each SNPs in" $input. " When you prepare the manuscript, this file should be integrate with above file --ROI.assoc--" >> readme.txt
 plink --bfile ROI.dbsnp --model fisher --ci 0.95 --out ROI
 echo  "ROI.model: Fisher's exact test based case-control association with different models for " $input. "this file is one of most important table in the manuscript" >> readme.txt
 plink --bfile ROI.dbsnp --logistic --dominant --ci 0.95 --out ROI.dominant
