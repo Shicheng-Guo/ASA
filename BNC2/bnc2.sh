@@ -13,6 +13,7 @@ tabix -p vcf ROI.vcf.gz
 bcftools annotate -a ~/hpc/db/hg19/refGene.hg19.VCF.sort.bed.gz -c CHROM,FROM,TO,GENE -h <(echo '##INFO=<ID=GENE,Number=1,Type=String,Description="Gene name">') ROI.vcf.gz -Ov -o ROI.refGene.vcf
 plink --vcf ROI.vcf.gz --make-bed --out ROI.dbsnp
 cp ROI.fam ROI.dbsnp.fam
+sleep 30
 touch readme.md
 echo  "### Novel Genetic susceptibility loci in" $input "associated with rheumatoid arthritis" > readme.md
 sleep 30
