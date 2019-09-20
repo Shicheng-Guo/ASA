@@ -1,0 +1,49 @@
+
+@----------------------------------------------------------@
+|        PLINK!       |     v1.07      |   10/Aug/2009     |
+|----------------------------------------------------------|
+|  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+|----------------------------------------------------------|
+|  For documentation, citation & bug-report instructions:  |
+|        http://pngu.mgh.harvard.edu/purcell/plink/        |
+@----------------------------------------------------------@
+
+Skipping web check... [ --noweb ] 
+Writing this text to log file [ haplotype.log ]
+Analysis started: Fri Sep 20 17:31:47 2019
+
+Options in effect:
+	--bfile ROI.dbsnp
+	--hap-window 2,3,4,5,6
+	--hap-assoc
+	--out haplotype
+	--noweb
+
+Reading map (extended format) from [ ROI.dbsnp.bim ] 
+177 markers to be included from [ ROI.dbsnp.bim ]
+Reading pedigree information from [ ROI.dbsnp.fam ] 
+2123 individuals read from [ ROI.dbsnp.fam ] 
+2123 individuals with nonmissing phenotypes
+Assuming a disease phenotype (1=unaff, 2=aff, 0=miss)
+Missing phenotype value is also -9
+1078 cases, 1045 controls and 0 missing
+383 males, 1740 females, and 0 of unspecified sex
+Reading genotype bitfile from [ ROI.dbsnp.bed ] 
+Detected that binary PED file is v1.00 SNP-major mode
+Before frequency and genotyping pruning, there are 177 SNPs
+2123 founders and 0 non-founders found
+Total genotyping rate in remaining individuals is 0.995409
+0 SNPs failed missingness test ( GENO > 1 )
+0 SNPs failed frequency test ( MAF < 0 )
+After frequency and genotyping pruning, there are 177 SNPs
+After filtering, 1078 cases, 1045 controls and 0 missing
+After filtering, 383 males, 1740 females, and 0 of unspecified sex
+
+Created 816 sliding windows
+Estimating haplotype frequencies/phases ( MHF >= 0.01 )
+Considering phases P(H|G) >= 0.01
+Requiring per individual per haplotype missingness < 0.5 
+Writing haplotype association statistics to [ haplotype.assoc.hap ]
+
+Analysis finished: Fri Sep 20 17:31:49 2019
+

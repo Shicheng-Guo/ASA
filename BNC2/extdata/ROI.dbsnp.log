@@ -1,0 +1,26 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --make-bed
+  --out ROI.dbsnp
+  --vcf ROI.vcf.gz
+
+Hostname: chg1-lc
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/BNC2
+Start time: Fri Sep 20 17:30:46 2019
+
+Random number seed: 1569018646
+387577 MB RAM detected; reserving 193788 MB for main workspace.
+--vcf: ROI.dbsnp-temporary.bed + ROI.dbsnp-temporary.bim +
+ROI.dbsnp-temporary.fam written.
+177 variants loaded from .bim file.
+2123 people (0 males, 0 females, 2123 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ROI.dbsnp.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2123 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.995409.
+177 variants and 2123 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to ROI.dbsnp.bed + ROI.dbsnp.bim + ROI.dbsnp.fam ... done.
+
+End time: Fri Sep 20 17:30:46 2019

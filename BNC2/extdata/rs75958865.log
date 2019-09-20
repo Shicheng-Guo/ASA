@@ -1,0 +1,32 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --bfile ../RA2020-B8.dbsnp
+  --ld-snp rs75958865
+  --ld-window 99999
+  --ld-window-kb 100
+  --ld-window-r2 0
+  --out rs75958865
+  --r2
+
+Hostname: chg1-lc
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/BNC2
+Start time: Fri Sep 20 17:31:51 2019
+
+Random number seed: 1569018711
+387577 MB RAM detected; reserving 193788 MB for main workspace.
+512950 variants loaded from .bim file.
+2123 people (383 males, 1740 females) loaded from .fam.
+2123 phenotype values loaded from .fam.
+Using up to 31 threads (change this with --threads).
+Before main variant filters, 2123 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 141134 het. haploid genotypes present (see rs75958865.hh ); many
+commands treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.99595.
+512950 variants and 2123 people pass filters and QC.
+Among remaining phenotypes, 1078 are cases and 1045 are controls.
+--r2 to rs75958865.ld ... done.
+
+End time: Fri Sep 20 17:31:51 2019
