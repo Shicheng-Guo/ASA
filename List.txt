@@ -1,0 +1,29 @@
+ID	SNP	Chromosome	Position	Overlapped Gene	Type	Annotation
+chr4:5125724:T/C:1	rs1374621	chr4	5125724	STK32B	protein_coding	intronic
+chr9:16576129:T/C:1	rs75958865	chr9	16576129	BNC2	protein_coding	intronic
+chr10:17142526:G/T:1	rs6602175	chr10	17142526	CUBN	protein_coding	intronic
+chr10:17146590:A/G:1	rs12571671	chr10	17146590	CUBN	protein_coding	coding syn
+chr10:17158973:G/A:1	rs12243895	chr10	17158973	CUBN	protein_coding	intronic
+chr20:20065793:G/A:1	rs6046608	chr20	20065793	C20orf26	protein_coding	intronic,5upstream
+chr20:20067476:A/G:1	rs6035547	chr20	20067476	C20orf26	protein_coding	intronic
+chr22:28755220:A/G:1	rs113318464	chr22	28755220	TTC28	protein_coding	intronic,non-coding intronic
+chr22:39813759:T/C/G:1	rs35469986	chr22	39813759	TAB1	protein_coding	coding nonsyn|nonsyn,3downstream,non-coding
+chr1:49237533:A/G:1	rs12756584	chr1	49237533	AGBL4	protein_coding	intronic
+chr1:49237533:A/G:1	rs12756584	chr1	49237533	BEND5	protein_coding	intronic,non-coding intronic
+chr12:66853883:T/C:1	rs11176197	chr12	66853883	GRIP1	protein_coding	intronic
+chr3:71511868:T/C:1	rs145044897	chr3	71511868	FOXP1	protein_coding	intronic
+chr3:71531046:G/A:1	rs140612058	chr3	71531046	FOXP1	protein_coding	intronic
+chr3:71557864:C/T:1	rs144054676	chr3	71557864	FOXP1	protein_coding	intronic,non-coding intronic
+chr10:73115942:G/A:1	rs2252996	chr10	73115942	SLC29A3	protein_coding	coding nonsyn,non-coding
+chr7:74126034:C/T:1	rs117026326	chr7	74126034	GTF2I	protein_coding	intronic,non-coding intronic
+chr1:78772699:C/A:1	rs117929741	chr1	78772699	PTGFR	protein_coding	intronic
+chr8:87915494:A/G:1	rs78891779	chr8	87915494	CNBD1	protein_coding	non-coding intronic,intronic
+chr8:88395551:C/T:1	rs144562892	chr8	88395551	CNBD1	protein_coding	3downstream,intronic
+chr12:100066900:A/G:1	rs11109987	chr12	100066900	ANKS1B	protein_coding	intronic,non-coding intronic
+chr11:131821000:G/A:1	rs574322	chr11	131821000	NTM	protein_coding	intronic,non-coding intronic
+chr5:170600883:A/G:1	rs17073388	chr5	170600883	RANBP17	protein_coding	intronic,non-coding intronic
+chr5:170610764:G/A:1	rs75306051	chr5	170610764	RANBP17	protein_coding	intronic,non-coding intronic
+chr5:170720733:C/G:1	rs2278255	chr5	170720733	RANBP17	protein_coding	intronic,non-coding intronic
+chr2:183317153:C/T:1	rs6433973	chr2	183317153	PDE1A	protein_coding	intronic,non-coding intronic
+chr2:183329639:C/T:1	rs1560374	chr2	183329639	PDE1A	protein_coding	intronic,non-coding intronic
+chr2:183346071:C/T:1	rs10169102	chr2	183346071	PDE1A	protein_coding	intronic,non-coding intronic
