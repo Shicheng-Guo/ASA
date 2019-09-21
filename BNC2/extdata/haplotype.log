@@ -10,7 +10,7 @@
 
 Skipping web check... [ --noweb ] 
 Writing this text to log file [ haplotype.log ]
-Analysis started: Fri Sep 20 17:31:47 2019
+Analysis started: Fri Sep 20 20:59:23 2019
 
 Options in effect:
 	--bfile ROI.dbsnp
@@ -45,5 +45,5 @@ Considering phases P(H|G) >= 0.01
 Requiring per individual per haplotype missingness < 0.5 
 Writing haplotype association statistics to [ haplotype.assoc.hap ]
 
-Analysis finished: Fri Sep 20 17:31:49 2019
+Analysis finished: Fri Sep 20 20:59:26 2019
 

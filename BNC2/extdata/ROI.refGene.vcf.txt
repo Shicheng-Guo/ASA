@@ -9,11 +9,11 @@
 ##contig=<ID=17,length=62964425>
 ##INFO=<ID=PR,Number=0,Type=Flag,Description="Provisional reference allele, may not be based on real reference genome">
 ##bcftools_viewVersion=1.9+htslib-1.9
-##bcftools_viewCommand=view -Oz -o ROI.vcf.gz ROI.vcf; Date=Fri Sep 20 17:30:46 2019
+##bcftools_viewCommand=view -Oz -o ROI.vcf.gz ROI.vcf; Date=Fri Sep 20 20:58:22 2019
 ##INFO=<ID=GENE,Number=1,Type=String,Description="Gene name">
 ##bcftools_annotateVersion=1.9+htslib-1.9
-##bcftools_annotateCommand=annotate -a /home/guosa/hpc/db/hg19/refGene.hg19.VCF.sort.bed.gz -c CHROM,FROM,TO,GENE -h /dev/fd/63 -Ov -o ROI.refGene.vcf ROI.vcf.gz; Date=Fri Sep 20 17:30:46 2019
-##bcftools_viewCommand=view -G -Ov -o ROI.refGene.vcf.txt ROI.refGene.vcf; Date=Fri Sep 20 17:31:46 2019
+##bcftools_annotateCommand=annotate -a /home/guosa/hpc/db/hg19/refGene.hg19.VCF.sort.bed.gz -c CHROM,FROM,TO,GENE -h /dev/fd/63 -Ov -o ROI.refGene.vcf ROI.vcf.gz; Date=Fri Sep 20 20:58:23 2019
+##bcftools_viewCommand=view -G -Ov -o ROI.refGene.vcf.txt ROI.refGene.vcf; Date=Fri Sep 20 20:59:23 2019
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
 1	247060260	rs12728361	A	G	.	.	PR;GENE=AHCTF1
 1	247066853	rs142196581	C	T	.	.	PR;GENE=AHCTF1

@@ -7,9 +7,9 @@ Options in effect:
 
 Hostname: chg1-lc
 Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/BNC2
-Start time: Fri Sep 20 17:31:46 2019
+Start time: Fri Sep 20 20:59:23 2019
 
-Random number seed: 1569018706
+Random number seed: 1569031163
 387577 MB RAM detected; reserving 193788 MB for main workspace.
 177 variants loaded from .bim file.
 2123 people (383 males, 1740 females) loaded from .fam.
@@ -22,4 +22,4 @@ Total genotyping rate is 0.995409.
 Among remaining phenotypes, 1078 are cases and 1045 are controls.
 Writing --model report to ROI.model ... done.
 
-End time: Fri Sep 20 17:31:47 2019
+End time: Fri Sep 20 20:59:23 2019
