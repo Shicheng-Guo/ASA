@@ -1,0 +1,29 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --bfile ROI.dbsnp
+  --ci 0.95
+  --logistic
+  --out ROI.recessive
+  --recessive
+
+Hostname: chg1-lc
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/CUBN
+Start time: Fri Sep 20 22:51:36 2019
+
+Note: --recessive flag deprecated.  Use e.g. '--linear recessive' (and
+'--condition-list [filename] recessive' to change covariate coding).
+Random number seed: 1569037896
+387577 MB RAM detected; reserving 193788 MB for main workspace.
+372 variants loaded from .bim file.
+2123 people (383 males, 1740 females) loaded from .fam.
+2123 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2123 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.997021.
+372 variants and 2123 people pass filters and QC.
+Among remaining phenotypes, 1078 are cases and 1045 are controls.
+Writing logistic model association results to ROI.recessive.assoc.logistic ...
+done.
+
+End time: Fri Sep 20 22:51:36 2019
