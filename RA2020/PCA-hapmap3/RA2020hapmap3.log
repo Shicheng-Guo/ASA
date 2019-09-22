@@ -1,0 +1,38 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --bfile /home/guosa/hpc/db/hapmap3/hapmap3.hg19.deking
+  --bmerge ../RA2020-B8.dbsnp
+  --make-bed
+  --out RA2020hapmap3
+
+Hostname: chg1-lc
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/hapmap3
+Start time: Sat Sep 21 21:11:24 2019
+
+Random number seed: 1569118284
+387577 MB RAM detected; reserving 193788 MB for main workspace.
+888 people loaded from /home/guosa/hpc/db/hapmap3/hapmap3.hg19.deking.fam.
+2123 people to be merged from ../RA2020-B8.dbsnp.fam.
+Of these, 2123 are new, while 0 are present in the base dataset.
+Warning: Multiple positions seen for variant 'rs1294657'.
+Warning: Multiple positions seen for variant 'rs1529893'.
+Warning: Multiple positions seen for variant 'rs13233990'.
+Warning: Multiple positions seen for variant 'rs2249255'.
+Warning: Multiple positions seen for variant 'rs9507310'.
+Warning: Multiple positions seen for variant 'rs2335455'.
+Warning: Multiple positions seen for variant 'rs4268799'.
+1403722 markers loaded from /home/guosa/hpc/db/hapmap3/hapmap3.hg19.deking.bim.
+512950 markers to be merged from ../RA2020-B8.dbsnp.bim.
+Of these, 364770 are new, while 148180 are present in the base dataset.
+Error: 183 variants with 3+ alleles present.
+* If you believe this is due to strand inconsistency, try --flip with
+  RA2020hapmap3-merge.missnp.
+  (Warning: if this seems to work, strand errors involving SNPs with A/T or C/G
+  alleles probably remain in your data.  If LD between nearby SNPs is high,
+  --flip-scan should detect them.)
+* If you are dealing with genuine multiallelic variants, we recommend exporting
+  that subset of the data to VCF (via e.g. '--recode vcf'), merging with
+  another tool/script, and then importing the result; PLINK is not yet suited
+  to handling them.
+
+End time: Sat Sep 21 21:11:25 2019

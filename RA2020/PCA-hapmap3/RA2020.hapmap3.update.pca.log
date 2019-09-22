@@ -1,0 +1,26 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --bfile RA2020.hapmap3.update
+  --make-bed
+  --out RA2020.hapmap3.update.pca
+
+Hostname: chg1-lc
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/hapmap3
+Start time: Sat Sep 21 21:13:52 2019
+
+Random number seed: 1569118432
+387577 MB RAM detected; reserving 193788 MB for main workspace.
+146649 variants loaded from .bim file.
+3011 people (825 males, 2186 females) loaded from .fam.
+2123 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2973 founders and 38 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.997441.
+146649 variants and 3011 people pass filters and QC.
+Among remaining phenotypes, 1078 are cases and 1045 are controls.  (888
+phenotypes are missing.)
+--make-bed to RA2020.hapmap3.update.pca.bed + RA2020.hapmap3.update.pca.bim +
+RA2020.hapmap3.update.pca.fam ... done.
+
+End time: Sat Sep 21 21:13:55 2019

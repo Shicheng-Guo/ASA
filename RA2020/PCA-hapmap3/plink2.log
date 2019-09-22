@@ -1,0 +1,25 @@
+PLINK v2.00a2LM 64-bit Intel (17 Jun 2019)
+Options in effect:
+  --bfile RA2020.hapmap3.update.pca
+  --pca
+  --threads 31
+
+Hostname: chg1-lc
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/hapmap3
+Start time: Sat Sep 21 21:13:59 2019
+
+Random number seed: 1569118439
+387577 MiB RAM detected; reserving 193788 MiB for main workspace.
+Using up to 31 threads (change this with --threads).
+3011 samples (2186 females, 825 males; 2973 founders) loaded from
+RA2020.hapmap3.update.pca.fam.
+146649 variants loaded from RA2020.hapmap3.update.pca.bim.
+1 binary phenotype loaded (1078 cases, 1045 controls).
+Calculating allele frequencies... done.
+Constructing GRM: done.
+Correcting for missingness... done.
+Extracting eigenvalues and eigenvectors... done.
+--pca: Eigenvectors written to plink2.eigenvec , and eigenvalues written to
+plink2.eigenval .
+
+End time: Sat Sep 21 21:14:07 2019

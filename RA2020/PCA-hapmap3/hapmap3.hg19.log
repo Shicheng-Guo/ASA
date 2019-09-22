@@ -1,0 +1,27 @@
+PLINK v2.00a2LM 64-bit Intel (17 Jun 2019)
+Options in effect:
+  --bfile /home/guosa/hpc/db/hapmap3/hapmap3.hg19.deking
+  --exclude RA2020hapmap3-merge.missnp
+  --make-bed
+  --max-alleles 2
+  --out hapmap3.hg19
+
+Hostname: chg1-lc
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/hapmap3
+Start time: Sat Sep 21 21:11:54 2019
+
+Random number seed: 1569118314
+387577 MiB RAM detected; reserving 193788 MiB for main workspace.
+Using up to 32 threads (change this with --threads).
+888 samples (446 females, 442 males; 850 founders) loaded from
+/home/guosa/hpc/db/hapmap3/hapmap3.hg19.deking.fam.
+1403722 variants loaded from
+/home/guosa/hpc/db/hapmap3/hapmap3.hg19.deking.bim.
+Note: No phenotype data present.
+--exclude: 1403539 variants remaining.
+1403539 variants remaining after main filters.
+Writing hapmap3.hg19.fam ... done.
+Writing hapmap3.hg19.bim ... done.
+Writing hapmap3.hg19.bed ... done.
+
+End time: Sat Sep 21 21:11:58 2019
