@@ -1,0 +1,35 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --bfile RA2020hapmap2
+  --extract plink.prune.in
+  --geno 0.1
+  --genome
+  --maf 0.01
+  --mind 0.1
+  --out RA2020hapmap2PCA
+
+Hostname: chg1-lc
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/hapmap
+Start time: Sat Sep 21 20:02:11 2019
+
+Random number seed: 1569114131
+387577 MB RAM detected; reserving 193788 MB for main workspace.
+4275010 variants loaded from .bim file.
+2332 people (488 males, 1844 females) loaded from .fam.
+2123 phenotype values loaded from .fam.
+--extract: 333719 variants remaining.
+2209 people removed due to missing genotype data (--mind).
+IDs written to RA2020hapmap2PCA.irem .
+Using up to 31 threads (change this with --threads).
+Before main variant filters, 123 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate in remaining samples is 0.911037.
+54121 variants removed due to missing genotype data (--geno).
+26299 variants removed due to minor allele threshold(s)
+(--maf/--max-maf/--mac/--max-mac).
+253299 variants and 123 people pass filters and QC.
+Note: No phenotypes present.
+IBD calculations complete.
+Finished writing RA2020hapmap2PCA.genome .
+
+End time: Sat Sep 21 20:02:16 2019

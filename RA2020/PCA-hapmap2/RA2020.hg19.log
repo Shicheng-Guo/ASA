@@ -1,0 +1,26 @@
+PLINK v2.00a2LM 64-bit Intel (17 Jun 2019)
+Options in effect:
+  --bfile ../RA2020-B8.dbsnp
+  --exclude RA2020hapmap2-merge.missnp
+  --make-bed
+  --max-alleles 2
+  --out RA2020.hg19
+
+Hostname: chg1-lc
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/hapmap
+Start time: Sat Sep 21 19:49:23 2019
+
+Random number seed: 1569113363
+387577 MiB RAM detected; reserving 193788 MiB for main workspace.
+Using up to 32 threads (change this with --threads).
+2123 samples (1740 females, 383 males; 2123 founders) loaded from
+../RA2020-B8.dbsnp.fam.
+512950 variants loaded from ../RA2020-B8.dbsnp.bim.
+1 binary phenotype loaded (1078 cases, 1045 controls).
+--exclude: 510724 variants remaining.
+510724 variants remaining after main filters.
+Writing RA2020.hg19.fam ... done.
+Writing RA2020.hg19.bim ... done.
+Writing RA2020.hg19.bed ... done.
+
+End time: Sat Sep 21 19:49:26 2019

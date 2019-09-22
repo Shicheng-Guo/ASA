@@ -1,0 +1,62 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --bfile RA2020hapmap2
+  --indep 50 5 2
+  --maf 0.01
+  --make-bed
+  --out RA2020hapmap2.indep
+
+Hostname: chg1-lc
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/hapmap
+Start time: Sat Sep 21 19:54:08 2019
+
+Random number seed: 1569113648
+387577 MB RAM detected; reserving 193788 MB for main workspace.
+4275010 variants loaded from .bim file.
+2332 people (488 males, 1844 females) loaded from .fam.
+2123 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2332 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 141134 het. haploid genotypes present (see RA2020hapmap2.indep.hh );
+many commands treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.186962.
+803430 variants removed due to minor allele threshold(s)
+(--maf/--max-maf/--mac/--max-mac).
+3471580 variants and 2332 people pass filters and QC.
+Among remaining phenotypes, 1078 are cases and 1045 are controls.  (209
+phenotypes are missing.)
+--make-bed to RA2020hapmap2.indep.bed + RA2020hapmap2.indep.bim +
+RA2020hapmap2.indep.fam ... done.
+Pruned 244039 variants from chromosome 1, leaving 25812.
+Pruned 270984 variants from chromosome 2, leaving 26255.
+Pruned 216305 variants from chromosome 3, leaving 21569.
+Pruned 204477 variants from chromosome 4, leaving 19637.
+Pruned 202872 variants from chromosome 5, leaving 20938.
+Pruned 220116 variants from chromosome 6, leaving 22835.
+Pruned 174856 variants from chromosome 7, leaving 17720.
+Pruned 179077 variants from chromosome 8, leaving 18800.
+Pruned 145652 variants from chromosome 9, leaving 16838.
+Pruned 168689 variants from chromosome 10, leaving 17824.
+Pruned 158224 variants from chromosome 11, leaving 16532.
+Pruned 152803 variants from chromosome 12, leaving 17362.
+Pruned 126021 variants from chromosome 13, leaving 13827.
+Pruned 101966 variants from chromosome 14, leaving 10825.
+Pruned 89170 variants from chromosome 15, leaving 9672.
+Pruned 89332 variants from chromosome 16, leaving 9864.
+Pruned 73475 variants from chromosome 17, leaving 8039.
+Pruned 95810 variants from chromosome 18, leaving 10440.
+Pruned 48618 variants from chromosome 19, leaving 5315.
+Pruned 76186 variants from chromosome 20, leaving 8712.
+Pruned 42872 variants from chromosome 21, leaving 4889.
+Pruned 42360 variants from chromosome 22, leaving 5193.
+Pruned 13028 variants from chromosome 23, leaving 4564.
+Pruned 787 variants from chromosome 24, leaving 108.
+Pruned 142 variants from chromosome 26, leaving 149.
+Pruning complete.  3137861 of 3471580 variants removed.
+Marker lists written to RA2020hapmap2.indep.prune.in and
+RA2020hapmap2.indep.prune.out .
+
+End time: Sat Sep 21 19:55:50 2019
