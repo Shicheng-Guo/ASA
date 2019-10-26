@@ -1,0 +1,21 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description="All filters passed">
+##filedate=2019.8.30
+##contig=<ID=9,length=141213431>
+##pipeline=michigan-imputationserver-1.2.1
+##imputation=minimac4-1.0.1-7228771
+##phasing=eagle-2.4
+##r2Filter=0.3
+##INFO=<ID=AF,Number=1,Type=Float,Description="Estimated Alternate Allele Frequency">
+##INFO=<ID=MAF,Number=1,Type=Float,Description="Estimated Minor Allele Frequency">
+##INFO=<ID=R2,Number=1,Type=Float,Description="Estimated Imputation Accuracy (R-square)">
+##INFO=<ID=ER2,Number=1,Type=Float,Description="Empirical (Leave-One-Out) R-square (available only for genotyped variants)">
+##INFO=<ID=IMPUTED,Number=0,Type=Flag,Description="Marker was imputed but NOT genotyped">
+##INFO=<ID=TYPED,Number=0,Type=Flag,Description="Marker was genotyped AND imputed">
+##INFO=<ID=TYPED_ONLY,Number=0,Type=Flag,Description="Marker was genotyped but NOT imputed">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##bcftools_annotateVersion=1.9+htslib-1.9
+##bcftools_annotateCommand=annotate -a /gpfs/home/guosa/hpc/db/hg19/dbSNP152/dbSNP152.chr9.hg19.vcf.gz -c ID -Oz -o chr9.dose.dbSNP.hg19.vcf.gz chr9.dose.contig.vcf.gz; Date=Sat Aug 31 20:52:58 2019
+##bcftools_viewVersion=1.9+htslib-1.9
+##bcftools_viewCommand=view -i R2>0.6|TYPED=1|TYPED_ONLY=1 chr9.dose.dbSNP.hg19.vcf.gz; Date=Sun Sep  1 16:13:51 2019
+##bcftools_annotateCommand=annotate -x ^FORMAT/GT -Oz -o chr9.dose.clean.hg19.vcf.gz; Date=Sun Sep  1 16:13:51 2019
