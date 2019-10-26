@@ -22,7 +22,7 @@ done
 ```
 3. add contig length to michigen imputation server output vcf.gz files since contig length information was lost (rsq>0.3) 
 ```
-cd /gpfs/home/guosa/hpc/rheumatology/RA/he2020/impute/R3
+cd ~/hpc/rheumatology/RA/he2020/impute/R3
 mkdir temp
 wget https://raw.githubusercontent.com/Shicheng-Guo/Gscutility/master/contigReplace.pl
 for i in {1..22}
