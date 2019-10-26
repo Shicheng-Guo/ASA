@@ -1,2 +1,2 @@
-* 2019/10/26, check significance to common miRNA-SNPs, [Check Readme]()
+* 2019/10/26, check significance to common miRNA-SNPs
 * 
