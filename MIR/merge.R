@@ -1,0 +1,6 @@
+setwd("/mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/impute/R3/plink")
+data1<-read.table("chr11.assoc.logistic.add",head=T,sep="")
+data2<-read.table("miRNAcommonSNP.txt",head=F,sep="")
+head(data1)
+head(data2)
+match(data2[,3],data1[,2])
