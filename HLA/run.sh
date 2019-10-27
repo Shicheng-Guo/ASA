@@ -24,6 +24,5 @@ plink --bfile RA.dose.dbSNP.miRNA.hg19 --counts --assoc --adjust --out RA.dose.d
 17	80627188
 11	76329590
 
-
 rs12379034
 rs12617656	2	162851147
