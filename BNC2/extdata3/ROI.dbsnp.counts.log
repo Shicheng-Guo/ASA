@@ -1,0 +1,29 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --adjust
+  --assoc
+  --bfile ROI.dbsnp
+  --counts
+  --out ROI.dbsnp.counts
+
+Hostname: login
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/impute/R3/BNC2
+Start time: Sun Nov  3 23:40:39 2019
+
+Note: --counts flag deprecated.  Use '--assoc counts' instead.
+Random number seed: 1572846039
+64510 MB RAM detected; reserving 32255 MB for main workspace.
+44255 variants loaded from .bim file.
+2050 people (379 males, 1671 females) loaded from .fam.
+2050 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2050 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+44255 variants and 2050 people pass filters and QC.
+Among remaining phenotypes, 1007 are cases and 1043 are controls.
+Writing C/C --assoc report to ROI.dbsnp.counts.assoc ...
+done.
+--adjust: Genomic inflation est. lambda (based on median chisq) = 1.21235.
+--adjust values (43358 variants) written to ROI.dbsnp.counts.assoc.adjusted .
+
+End time: Sun Nov  3 23:40:39 2019
