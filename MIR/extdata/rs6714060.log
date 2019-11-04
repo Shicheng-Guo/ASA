@@ -1,0 +1,27 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --bfile ROI.dbsnp
+  --ld-snp rs6714060
+  --ld-window 99999
+  --ld-window-kb 50
+  --ld-window-r2 0
+  --out rs6714060
+  --r2
+
+Hostname: login
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/impute/R3/DNMT
+Start time: Sun Nov  3 21:52:09 2019
+
+Random number seed: 1572839529
+64510 MB RAM detected; reserving 32255 MB for main workspace.
+71685 variants loaded from .bim file.
+2050 people (379 males, 1671 females) loaded from .fam.
+2050 phenotype values loaded from .fam.
+Using up to 15 threads (change this with --threads).
+Before main variant filters, 2050 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+71685 variants and 2050 people pass filters and QC.
+Among remaining phenotypes, 1007 are cases and 1043 are controls.
+--r2 to rs6714060.ld ... done.
+
+End time: Sun Nov  3 21:52:09 2019
