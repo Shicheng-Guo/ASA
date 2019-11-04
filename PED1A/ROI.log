@@ -1,0 +1,29 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --adjust
+  --bfile ROI.dbsnp
+  --ci 0.95
+  --hwe 0.01
+  --logistic
+  --out ROI
+
+Hostname: login
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/impute/R3/PDE1A
+Start time: Sun Nov  3 16:29:48 2019
+
+Random number seed: 1572820188
+64510 MB RAM detected; reserving 32255 MB for main workspace.
+28387 variants loaded from .bim file.
+2050 people (379 males, 1671 females) loaded from .fam.
+2050 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2050 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+--hwe: 160 variants removed due to Hardy-Weinberg exact test.
+28227 variants and 2050 people pass filters and QC.
+Among remaining phenotypes, 1007 are cases and 1043 are controls.
+Writing logistic model association results to ROI.assoc.logistic ... done.
+--adjust: Genomic inflation est. lambda (based on median chisq) = 1.
+--adjust values (24981 variants) written to ROI.assoc.logistic.adjusted .
+
+End time: Sun Nov  3 16:29:50 2019
