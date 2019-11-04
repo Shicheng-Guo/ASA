@@ -1,0 +1,28 @@
+PLINK v1.90p 64-bit (21 Feb 2018)
+Options in effect:
+  --bfile ROI.dbsnp
+  --ci 0.95
+  --logistic
+  --out ROI.recessive
+  --recessive
+
+Hostname: login
+Working directory: /mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/he2020/impute/R3/DNMT
+Start time: Sun Nov  3 20:56:23 2019
+
+Note: --recessive flag deprecated.  Use e.g. '--linear recessive' (and
+'--condition-list [filename] recessive' to change covariate coding).
+Random number seed: 1572836183
+64510 MB RAM detected; reserving 32255 MB for main workspace.
+71685 variants loaded from .bim file.
+2050 people (379 males, 1671 females) loaded from .fam.
+2050 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 2050 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+71685 variants and 2050 people pass filters and QC.
+Among remaining phenotypes, 1007 are cases and 1043 are controls.
+Writing logistic model association results to ROI.recessive.assoc.logistic ...
+done.
+
+End time: Sun Nov  3 20:56:25 2019
